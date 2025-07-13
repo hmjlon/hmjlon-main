@@ -3,10 +3,15 @@
 프로그래밍 아키텍처 패턴 비교
 · MVC, MVP, MVVM 패턴의 구조와 특징
 
+</pre>
 
 
+<img src="patterns.PNG" alt="아키텍쳐 설명 비교 이미지" style="width: 100%; max-width: 900px;">
 
-✅ MVC (Model - View - Controller)
+
+<pre>
+* MVC (Model - View - Controller)
+
 1. 구조
 
 Model: 앱의 핵심 데이터랑 비즈니스 로직을 담당한다.
@@ -14,6 +19,7 @@ Model: 앱의 핵심 데이터랑 비즈니스 로직을 담당한다.
 View: 사용자에게 보여지는 화면(UI)을 담당한다.
 
 Controller: 사용자 입력을 받아서 처리하고, 필요한 Model을 호출하거나 View를 갱신한다.
+
 
 2. 특징
 
@@ -30,7 +36,8 @@ View와 Model, Controller 사이의 연결이 비교적 느슨하지 않아서 �
 
 
 
-✅ MVP (Model - View - Presenter)
+* MVP (Model - View - Presenter)
+
 1. 구조
 
 Model: 데이터랑 비즈니스 로직을 담당한다.
@@ -38,6 +45,7 @@ Model: 데이터랑 비즈니스 로직을 담당한다.
 View: 화면을 구성하는 역할만 하고, 로직은 거의 없다. 보통 인터페이스로 정의한다.
 
 Presenter: View에서 이벤트를 전달받아 Model을 조작하고, 결과를 View에 다시 전달한다.
+
 
 2. 특징
 
@@ -54,7 +62,8 @@ View는 거의 수동적으로 동작하고, 대부분의 로직은 Presenter가
 
 
 
-✅ MVVM (Model - View - ViewModel)
+* MVVM (Model - View - ViewModel)
+
 1. 구조
 
 Model: 데이터랑 비즈니스 로직을 담당한다.
@@ -62,6 +71,7 @@ Model: 데이터랑 비즈니스 로직을 담당한다.
 View: 사용자에게 보여지는 화면(UI)을 담당하고, ViewModel이랑 데이터 바인딩된다.
 
 ViewModel: View의 상태와 데이터를 관리하면서 Model과 통신한다. View랑은 바인딩을 통해 연결된다.
+
 
 2. 특징
 
@@ -74,6 +84,3 @@ ViewModel은 View를 참조하지 않아서 테스트하기가 매우 쉽다.
 단점은 바인딩 구조가 복잡해질 경우 디버깅이 어려울 수 있다는 점이다.
 
 </pre>
-
-<img src="patterns.PNG" alt="아키텍쳐 설명 비교 이미지" style="width: 100%; max-width: 900px;">
-
